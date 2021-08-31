@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Alata', sans-serif;
+}
+
+h1, h2, h3, button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul li {
+  position: relative;
+  padding: 7px 0;
+  cursor: pointer;
+}
+
+ul li::after {
+  content: '';
+  display: none;
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 10px);
+}
+
+ul li:hover::after {
+  display: inline-block;
+}
+
+ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.hero-section {
+  background: url("../images/desktop/image-hero.jpg") no-repeat center;
+  background-size: cover;
+  height: 650px;
+  color: white;
+  padding: 60px 0 140px;
+}
+
+.hero-section #menu-trigger {
+  opacity: 0;
+  position: absolute;
+}
+
+.hero-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.hero-section header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-section h1 {
+  border: 1px solid white;
+  text-transform: uppercase;
+  padding: 30px;
+  font-size: 60px;
+  width: 60%;
+}
+
+.hero-section .hamburger-menu {
+  display: none;
+}
+
+.interactive-leader {
+  margin: 140px 0;
+}
+
+.interactive-leader .container {
+  position: relative;
+}
+
+.interactive-leader .text {
+  background-color: white;
+  padding-top: 60px;
+  padding-left: 60px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.interactive-leader .text h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.interactive-leader .text p {
+  color: #8c8c8c;
+  line-height: 1.5;
+}
+
+.our-creations header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.our-creations header h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.our-creations button {
+  background-color: white;
+  border: 1px solid black;
+  text-transform: uppercase;
+  padding: 7px 22px;
+  cursor: pointer;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.our-creations button:hover {
+  background-color: black;
+  color: white;
+}
+
+.our-creations .creations {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.our-creations .creations article {
+  height: 450px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 30px;
+  /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+  /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+  /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+  /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+  /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+  /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+  /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+  /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+}
+
+.our-creations .creations article h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  width: 80%;
+}
+
+.our-creations .creations article:nth-child(1) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-deep-earth.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-deep-earth.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations .creations article:nth-child(2) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-night-arcade.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-night-arcade.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations .creations article:nth-child(3) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-soccer-team.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-soccer-team.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations .creations article:nth-child(4) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-grid.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-grid.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations .creations article:nth-child(5) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-from-above.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-from-above.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations .creations article:nth-child(6) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-pocket-borealis.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-pocket-borealis.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations .creations article:nth-child(7) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-curiosity.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-curiosity.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations .creations article:nth-child(8) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/desktop/image-fisheye.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/desktop/image-fisheye.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.our-creations .container > button {
+  display: none;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  margin-top: 140px;
+  padding: 45px 0;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container > * {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+footer .container ul {
+  margin: 0;
+}
+
+footer .social-icons {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .social-icons li:not(:last-child) {
+  margin-right: 15px;
+}
+
+footer p {
+  color: #8c8c8c;
+  text-align: right;
+}
+
+footer nav, footer p {
+  margin-top: 15px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 760px;
+  }
+  .hero-section h1 {
+    width: 100%;
+  }
+  .interactive-leader .text {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .interactive-leader .text h2 {
+    font-size: 30px;
+  }
+  .our-creations .creations {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .hero-section {
+    /* hacky solution until JS */
+  }
+  .hero-section nav {
+    display: none;
+  }
+  .hero-section h1 {
+    font-size: 52px;
+  }
+  .hero-section header img {
+    position: relative;
+    z-index: 2;
+  }
+  .hero-section .hamburger-menu {
+    display: inline;
+  }
+  .hero-section #menu-trigger:focus + nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+  }
+  .hero-section #menu-trigger:focus + nav ul {
+    display: block;
+    padding: 0 30px;
+  }
+  .hero-section #menu-trigger:focus + nav ul li {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .interactive-leader img {
+    max-width: 100%;
+  }
+  .interactive-leader .text {
+    position: static;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 0;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .interactive-leader .text h2 {
+    font-size: 45px;
+  }
+  .our-creations header {
+    display: block;
+  }
+  .our-creations header h2 {
+    text-align: center;
+  }
+  .our-creations header button {
+    display: none;
+  }
+  .our-creations .creations {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .our-creations .creations article {
+    height: 200px;
+    /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+    /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+    /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+    /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+    /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+    /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+    /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+    /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+  }
+  .our-creations .creations article:nth-child(1) {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/mobile/image-deep-earth.jpg") no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/mobile/image-deep-earth.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .our-creations .creations article:nth-child(2) {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/mobile/image-night-arcade.jpg") no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/mobile/image-night-arcade.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .our-creations .creations article:nth-child(3) {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/mobile/image-soccer-team.jpg") no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/mobile/image-soccer-team.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .our-creations .creations article:nth-child(4) {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/mobile/image-grid.jpg") no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/mobile/image-grid.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .our-creations .creations article:nth-child(5) {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/mobile/image-from-above.jpg") no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/mobile/image-from-above.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .our-creations .creations article:nth-child(6) {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/mobile/image-pocket-borealis.jpg") no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/mobile/image-pocket-borealis.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .our-creations .creations article:nth-child(7) {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/mobile/image-curiosity.jpg") no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/mobile/image-curiosity.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .our-creations .creations article:nth-child(8) {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 0, 0, 0))), url("../images/mobile/image-fisheye.jpg") no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0) 100%), url("../images/mobile/image-fisheye.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .our-creations .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .our-creations .container > button {
+    display: inline;
+    font-size: 24px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .container > * {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  footer .social-icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer nav, footer p {
+    margin-top: 0;
+  }
+  footer .image-wrapper {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer nav {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 30px 0;
+  }
+  footer nav ul li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  footer .social-icons {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  footer p {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  footer nav ul {
+    display: block;
+  }
+  footer nav ul li:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .our-creations .creations {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

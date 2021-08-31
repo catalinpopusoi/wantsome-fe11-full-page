@@ -1,0 +1,19 @@
+$images: 'deep-earth', 'night-arcade', 'soccer-team', 'grid', 'from-above', 'pocket-borealis', 'curiosity', 'fisheye';
+@mixin load-images($screen-size) {
+    @for $i from 1 through length($images) { // for i de la 1 pana la 8
+        $image: nth($images, $i);
+
+        /*
+            la prima iteratie, i = 1, image = deep-earth
+            la a doua iteratie, i = 2, image = night-arcade
+            la a 3-a iteratie, i = 3, image = soccer-team
+            ...
+            la a 8-a iteratie, i = 8, image = fisheye
+        */
+
+        &:nth-child(#{$i}) {
+            background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(255,0,0,0) 100%), url('../images/#{$screen-size}/image-#{$image}.jpg') no-repeat center;
+            background-size: cover;
+        }
+    }
+}
